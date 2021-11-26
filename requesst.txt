@@ -1,0 +1,10 @@
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"group":"sunitparekh","name":"city","value":"Pune"}' \
+  http://172.17.0.4:8080/metadatakgpo
+
+
+  task
+
+  1. watch brew 
+  2. alias extension added

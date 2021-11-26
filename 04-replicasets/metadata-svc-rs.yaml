@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: metadata-service-rs
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: metadata-service-pod
+  template:
+    metadata:
+      labels:
+        app: metadata-service-pod
+    spec:
+      containers:
+        - name: metadata-service
+          image: sunitparekh/metadata:v1.0
+          ports:
+            - containerPort: 8080
