@@ -5,8 +5,9 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-      app: dobby-pod
+      app: dobby-pod-rs
   ports:
   - protocol: TCP
     port: 4444
-    targetPort: 4444
+    targetPort: 4444 
+    # should match pod's port

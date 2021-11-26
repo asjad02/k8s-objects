@@ -3,14 +3,14 @@ kind: ReplicaSet
 metadata:
   name: dobby-rs
 spec:
-  replicas: 10
+  replicas: 4
   selector:
     matchLabels:
-      app: dobby-pod
+      app: dobby-pod-rs
   template:
     metadata:
       labels:
-        app: dobby-pod
+        app: dobby-pod-rs
     spec:
       containers:
         - name: dobby

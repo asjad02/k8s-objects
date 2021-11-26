@@ -6,7 +6,7 @@ spec:
   externalTrafficPolicy: Local
   type: LoadBalancer
   selector:
-      app: dobby-pod
+      app: dobby-pod-rs
   ports:
   - protocol: TCP
     port: 4444
