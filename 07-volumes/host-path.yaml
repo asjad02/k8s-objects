@@ -6,7 +6,7 @@ spec:
   volumes:
     - name: html
       hostPath:
-        path: /home/vagrant/nginx/html
+        path: /home/docker/vagrant/nginx/html
         type: Directory
   containers:
     - name: c1
